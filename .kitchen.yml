@@ -1,0 +1,21 @@
+---
+driver:
+  name: digitalocean
+
+driver_config:
+  require_chef_omnibus: '11.16.4'
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14-04-x64
+    driver_config:
+      region: ams3
+      size: 512mb
+
+suites:
+  - name: default
+    run_list:
+      - recipe[stackup-nginx::default]
+    attributes:

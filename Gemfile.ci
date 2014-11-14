@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+group :test do
+  gem 'berkshelf'
+  gem 'chef-dk'
+  gem 'foodcritic'
+  gem 'kitchen-digitalocean'
+  gem 'rubocop'
+  gem 'test-kitchen'
+end
